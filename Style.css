@@ -1,5 +1,5 @@
 body {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -52,6 +52,12 @@ input.search-bar{
     font-family: inherit;
     font-size: 105%;
     width: calc(100% - 100px);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card {
@@ -107,4 +113,51 @@ input.search-bar{
 .temperature-container .unit-options option {
     background: #333;
     color: white;
+}
+
+.weather-card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.time-card {
+    background: #111111d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 2em;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.8em;
+    margin-top: 8px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start, .stop, .reset {
+    font-family: "Open Sans", sans-serif;
+    justify-content: center;
+    width: 100%;
+    max-width: 80px;
+    margin: 0 8px;
+    background-color: #7c7c7c8b;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
 }
