@@ -23,7 +23,13 @@
         </div>
         <div class="weather loading">
             <h2 class="city"> Weather in Denver</h2>
-            <h1 class="temp">51°C</h1>
+            <div class="temperature-container">
+                <h1 class="temp">51°C</h1>
+                <select class="unit-options" name="units">
+                    <option value="celsius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                </select>
+            </div>
             <div class="flex">
                 <img src="https://openweathermap.org/img/wn/02d.png" alt="" class="icon" />
                 <div class="description">Cloudy</div>
