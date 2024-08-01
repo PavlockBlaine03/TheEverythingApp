@@ -1,12 +1,15 @@
 body {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     margin: 0;
     font-family: "Open Sans", sans-serif;
     background: #222;
-    background-image: url('https://picsum.photos/1920/1080?random');
+    background-image: url('C:/VisualCodeProjects/WeatherApp/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     font-size: 120%;
 }
 
@@ -61,13 +64,49 @@ input.search-bar{
 }
 
 .card {
-    background: #000000d0;
+    background: none;
     color: white;
     padding: 2em;
     border-radius: 30px;
     width: 100%;
     max-width: 420px;
     margin: 1em;
+    position:relative;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card::after, .card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #ff7575, #a0ffa0, #2828ff, #ff6767);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 4px;
+    border-radius: 30px;
+    animation: 3s spin linear infinite;
+}
+
+.card::before {
+    filter: blur(1.5em);
+    opacity: 0.5;
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
 }
 
 .search{
@@ -116,7 +155,7 @@ input.search-bar{
 }
 
 .weather-card {
-    background: #000000d0;
+    background: #161616ff;
     color: white;
     padding: 2em;
     border-radius: 30px;
