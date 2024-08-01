@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
     background: #222;
-    background-image: url('C:/VisualCodeProjects/WeatherApp/images/background.png');
+    background-image: url('../images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
