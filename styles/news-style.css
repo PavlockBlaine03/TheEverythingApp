@@ -1,0 +1,43 @@
+.news-card {
+    background: #111111d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 2em;
+}
+
+.news-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.8em;
+    margin-top: 8px;
+}
+
+.news-article {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+}
+
+.news-article h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.news-article p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.news-article a {
+    color: red;
+    text-decoration: none;
+}
+
+.news-article a:hover {
+    color: white;
+    text-decoration: underline;
+}
+

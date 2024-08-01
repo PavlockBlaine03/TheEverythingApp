@@ -7,8 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Style.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles/weather-style.css" />
+    <link rel="stylesheet" href="styles/time-style.css" />
+    <link rel="stylesheet" href="styles/news-style.css" />
+    <script src="scripts/weather_script.js" defer></script>
+    <script src="scripts/stop_watch_script.js" defer></script>
+    <script src="scripts/news-script.js" defer></script>
 </head>
 
 <body>
@@ -23,7 +27,7 @@
                 </button>
             </div>
             <div class="weather loading">
-                <h2 class="city"> Weather in Denver</h2>
+                <h2 class="city" id="city"> Weather in Denver</h2>
                 <div class="temperature-container">
                     <h1 class="temp">51°C</h1>
                     <select class="unit-options" name="units">
@@ -49,6 +53,12 @@
                 <button class="start" id="startButton">Start</button>
                 <button class="stop" id="stopButton">Stop</button>
                 <button class="reset" id="resetButton">Reset</button>
+            </div>
+        </div>
+        <div class="news-card card">
+            <h2 class="news-header" id="header">Latest News</h2>
+            <div class="news-container">
+
             </div>
         </div>
     </div>
