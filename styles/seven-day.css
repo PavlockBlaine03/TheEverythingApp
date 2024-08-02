@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background: linear-gradient(to right, red, blue, green);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 120%;
+}
