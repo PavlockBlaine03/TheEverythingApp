@@ -5,7 +5,7 @@ body {
     height: 100%;
     margin: 0;
     font-family: "Open Sans", sans-serif;
-    background: linear-gradient(to right, red, blue, green);
+    background: linear-gradient(to right, #000000ff, #555555ff, #aaaaaaff);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -164,3 +164,13 @@ input.search-bar{
     margin-top: 10em;
 }
 
+.seven-day {
+    width: 60px;
+    border-radius: 33%;
+    text-decoration: none;
+}
+
+.seven-day a {
+    text-decoration: none;
+    color: inherit;
+}
